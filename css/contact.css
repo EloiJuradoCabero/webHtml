@@ -1,0 +1,157 @@
+body {
+  background-color: #d1f3e7;
+}
+
+#title-Tag-Line {
+  font-size: 20px;
+}
+
+
+/* COMENÇA EL FONS ANIMAT DE LA PAGINA CONTACTES */
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: url(img/bg.jpg) center center;
+  background-size: cover;
+}
+
+.pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.montaña1 {
+  background: url(img/mountain1.png) center center;
+  background-size: cover;
+  transform: scale3d(1.1, 1.1, 1.1);
+  opacity: 0.2;
+  animation: animacio1 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.montaña2 {
+  background: url(img/mountain2.png) center center;
+  background-size: cover;
+  transform: scale3d(1.3, 1.3, 1.3);
+  opacity: 0.1;
+  animation: animacio1 1.2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes animacio1 {
+  100% {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+  }
+}
+
+
+/* COMENCA CODIC CSS DEL FORMULARI */
+
+.formulari {
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 5px solid #0e3721;
+  animation: bounce 1.5s infinite;
+}
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+}
+
+.titul{
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+
+.paginaTitul{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.nom {
+  background-color: #ebebeb;
+  color: black;
+}
+.nom:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.correu {
+  background-color: #ebebeb;
+  height: 2em;
+}
+
+.email:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.missatge {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.missatge:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 12em;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.formEntrada {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.enviar {
+  width: 200px;
+  color: white;
+  background-color: #0e3721;
+  font-size: 20px;
+}
+
+.enviar:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid #0e3750;
+  border-radius: 0%;
+}
+
+@keyframes bounce {
+  0% {
+    tranform: translate(0, 4px);
+  }
+  50% {
+    transform: translate(0, 8px);
+  }
+} 
+
