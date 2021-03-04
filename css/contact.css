@@ -1,60 +1,10 @@
-body {
-  background-color: #d1f3e7;
-}
-
-#title-Tag-Line {
-  font-size: 20px;
-}
-
-
-/* COMENÇA EL FONS ANIMAT DE LA PAGINA CONTACTES */
-
-body{
-
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background: url(img/bg.jpg) center center;
-  background-size: cover;
-}
-
-.pos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.montaña1 {
-  background: url(img/mountain1.png) center center;
-  background-size: cover;
-  transform: scale3d(1.1, 1.1, 1.1);
-  opacity: 0.2;
-  animation: animacio1 1s ease-out;
-  animation-fill-mode: forwards;
-}
-
-.montaña2 {
-  background: url(img/mountain2.png) center center;
-  background-size: cover;
-  transform: scale3d(1.3, 1.3, 1.3);
-  opacity: 0.1;
-  animation: animacio1 1.2s ease-out;
-  animation-fill-mode: forwards;
-}
-
-
-@keyframes animacio1 {
-  100% {
-      transform: scale3d(1, 1, 1);
-      opacity: 1;
-  }
-}
 
 
 /* COMENCA CODIC CSS DEL FORMULARI */
 
+body {
+  background-color: #d1f3e7;
+}
 .formulari {
   background: #fff;
   box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
